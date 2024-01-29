@@ -145,7 +145,7 @@ Future<void> _login() async {
      await FirebaseAuth.instance.signOut();
    } else {
      // Email is verified
-     showSnackBar("Logged in successfully", Colors.green);
+     showSnackBar("Logged in successfully", Colors.black);
       GoRouter.of(context).pushReplacement(AppRouter.kHomeView);
    }
  } on FirebaseAuthException catch (e) {

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
 class QRGeneratorScreen extends StatelessWidget {
-final String _data = 'Order Amount: 100K\n\nStoreDetails: {Name: Thunder with ID: 2345}\n\nTransactionId: 4555,';
+final String _data = 'Order Amount: 100K\n\nStore Details: {Name: Thunder with ID: 2345}\n\nTransaction Id: 4555,';
 
  const QRGeneratorScreen({super.key});
 

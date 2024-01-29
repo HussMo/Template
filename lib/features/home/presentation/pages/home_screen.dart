@@ -51,6 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
           title: Text(
             S.of(context).title,
             style: const TextStyle(
+              color: Colors.white,
               fontSize: 20,
               fontWeight: FontWeight.bold,
             ),

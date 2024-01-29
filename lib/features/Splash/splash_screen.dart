@@ -37,7 +37,7 @@ class _SplashViewbodyState extends State<SplashView>
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Image.asset('assets/images/Logo.png'),
+        Image.asset('assets/images/igentecheg_logo.jpeg'),
         const SizedBox(
           height: 4,
         ),

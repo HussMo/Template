@@ -7,7 +7,7 @@ import 'package:theme_app/Shared/core/utils/cache_helper.dart';
 import 'package:theme_app/Shared/style/themes.dart';
 import 'package:theme_app/features/settings/presentation/blocs/localization/local_cubit.dart';
 import 'package:theme_app/features/settings/presentation/blocs/localization/local_state.dart';
-import 'package:theme_app/firebase_options.dart';
+import 'package:theme_app/features/Login_screen/firebase_options.dart';
 import 'package:theme_app/generated/l10n.dart';
 
 void main() async {
