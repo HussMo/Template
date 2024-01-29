@@ -3,7 +3,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
-import 'package:theme_app/features/Login_screen/widgets/custom_text_field.dart';
+import 'package:theme_app/Shared/widgets/custom_text_field.dart';
 
 class SignupPage extends StatefulWidget {
  const SignupPage({Key? key}) : super(key: key);

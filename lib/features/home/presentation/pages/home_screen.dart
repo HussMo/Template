@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
 import 'package:theme_app/Shared/core/utils/app_router.dart';
-import 'package:theme_app/generated/l10n.dart';
+import 'package:theme_app/Shared/widgets/bottom_navigation_bar.dart';
 
 class HomeScreen extends StatefulWidget {
  const HomeScreen({super.key});
@@ -19,6 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
  @override
  Widget build(BuildContext context) {
+    var currentIndex = 0;
     return WillPopScope(
       onWillPop: () async {
         if (_doubleBackToExitPressedOnce) {
@@ -48,55 +49,18 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () {GoRouter.of(context).push(AppRouter.kSettingsView);}
             ),
           ],
-          title: Text(
-            S.of(context).title,
-            style: const TextStyle(
+          title: const Text(
+            'iGenTech',
+            style: TextStyle(
               color: Colors.white,
               fontSize: 20,
               fontWeight: FontWeight.bold,
             ),
           ),
         ),
-        body:   Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Colors.blueGrey[100],
-                ),
-                child: TextButton(onPressed: 
-                () {GoRouter.of(context).push(AppRouter.kGenerateQRView);}
-                , child: Text(
-                  S.of(context).home_title,
-                  style: const TextStyle(
-                    color: Colors.black,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),),
-              ),
-              const SizedBox(height: 20),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Colors.blueGrey[100],
-                ),
-                child: TextButton(onPressed: 
-                () {GoRouter.of(context).push(AppRouter.kScannerQRView);}
-                , child: const Text(
-                  "Scaner QR Code",
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),),
-              ),
-            ],
-          )
-        ),
+        body: Center(child: Image.asset('assets/images/igentech.png')),
+         bottomNavigationBar: CustomBottomNavigationBar(currentIndex: currentIndex),
+
       ),
     );
  }

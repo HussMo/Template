@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
+import 'package:theme_app/Shared/widgets/bottom_navigation_bar.dart';
 
 class QRScannerScreen extends StatefulWidget {
   const QRScannerScreen({Key? key}) : super(key: key);
@@ -18,6 +19,7 @@ class _ScanScreenState extends State<QRScannerScreen> {
   Widget build(BuildContext context) {
     height = MediaQuery.of(context).size.height;
     width = MediaQuery.of(context).size.width;
+    var currentIndex = 2;
 
     return Scaffold(
       appBar: AppBar(
@@ -48,9 +50,9 @@ class _ScanScreenState extends State<QRScannerScreen> {
                     icon: const Icon(
                       Icons.qr_code_scanner,
                       size: 60,
-                      color: Colors.black, // Dark theme icon color
+                      color: Colors.black, 
                     ),
-                    onPressed: scanQr, // Trigger scanQr when icon is pressed
+                    onPressed: scanQr,
                   ),
                 ),
                 
@@ -59,6 +61,7 @@ class _ScanScreenState extends State<QRScannerScreen> {
           ),
         ),
       ),
+      bottomNavigationBar: CustomBottomNavigationBar(currentIndex: currentIndex),
     );
   }
 

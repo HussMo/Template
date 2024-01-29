@@ -3,5 +3,6 @@
   "title" : "My App",
   "languages" : "language",
   "Settings" : "Settings",
-  "Themes" : "Themes"
+  "Themes" : "Themes",
+  "about" : "About"
 }

@@ -3,7 +3,7 @@ import 'package:theme_app/features/Login_screen/pages/login_screen.dart';
 import 'package:theme_app/features/Login_screen/pages/signup_screen.dart';
 import 'package:theme_app/features/QR_Scanner/presentation/pages/readqr.dart';
 import 'package:theme_app/features/QR_Scanner/presentation/pages/scanqr.dart';
-import 'package:theme_app/features/Splash/splash_screen.dart';
+import 'package:theme_app/features/Splash/splash_view.dart';
 import 'package:theme_app/features/home/presentation/pages/home_screen.dart';
 import 'package:theme_app/features/settings/presentation/pages/settings.dart';
 
