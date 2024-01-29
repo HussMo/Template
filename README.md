@@ -28,3 +28,6 @@ it?"
 
 
 4- After a successful review, the app is published on the App Store. Users can then download and install the IPA file from the App Store onto their devices.
+
+
+Also, I needed to generate an IPA file for the app so the client could review it before the distribution and generate many IPAs for Firebase distribution purposes in my current job.
