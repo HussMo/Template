@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -6,9 +7,14 @@ import 'package:theme_app/Shared/core/utils/cache_helper.dart';
 import 'package:theme_app/Shared/style/themes.dart';
 import 'package:theme_app/features/settings/presentation/blocs/localization/local_cubit.dart';
 import 'package:theme_app/features/settings/presentation/blocs/localization/local_state.dart';
+import 'package:theme_app/firebase_options.dart';
 import 'package:theme_app/generated/l10n.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   WidgetsFlutterBinding.ensureInitialized();
   await CacheHelper.init();
   runApp(const MyApp());

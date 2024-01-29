@@ -1,4 +1,7 @@
 {
-  "home_title" : "Home Screen",
-  "title" : "My App"
+  "Code Generated" : "Scan this code",
+  "title" : "My App",
+  "languages" : "language",
+  "Settings" : "Settings",
+  "Themes" : "Themes"
 }

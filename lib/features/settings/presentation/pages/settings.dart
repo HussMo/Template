@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:theme_app/features/settings/presentation/blocs/localization/local_cubit.dart';
 import 'package:theme_app/features/settings/presentation/blocs/localization/local_state.dart';
+import 'package:theme_app/generated/l10n.dart';
 
 class SettingsPage extends StatefulWidget {
  const SettingsPage({Key? key}) : super(key: key);
@@ -17,7 +18,7 @@ class _SettingsPageState extends State<SettingsPage> {
  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Settings'),
+        title: Text(S.of(context).Settings),
       ),
       body: ListView(
         children: [
@@ -27,7 +28,7 @@ class _SettingsPageState extends State<SettingsPage> {
                 currentLanguage = state.locale.languageCode;
               }
               return ListTile(
-                title: const Text('Language'),
+                title:  Text(S.of(context).languages),
                 trailing: DropdownButton<String>(
                  value: currentLanguage,
                  items: const [
@@ -42,7 +43,7 @@ class _SettingsPageState extends State<SettingsPage> {
             },
           ),
           SwitchListTile(
-            title: const Text('Dark Mode'),
+            title: Text(S.of(context).Themes),
             value: false,
             onChanged: (value) {},
           ),

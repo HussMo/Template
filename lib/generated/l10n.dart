@@ -50,10 +50,10 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `Home Screen`
+  /// `QR Code Scanner`
   String get home_title {
     return Intl.message(
-      'Home Screen',
+      'QR Code Scanner',
       name: 'home_title',
       desc: '',
       args: [],
@@ -65,6 +65,36 @@ class S {
     return Intl.message(
       'My App',
       name: 'title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `language`
+  String get languages {
+    return Intl.message(
+      'language',
+      name: 'languages',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Settings`
+  String get Settings {
+    return Intl.message(
+      'Settings',
+      name: 'Settings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Themes`
+  String get Themes {
+    return Intl.message(
+      'Themes',
+      name: 'Themes',
       desc: '',
       args: [],
     );
