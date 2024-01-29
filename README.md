@@ -19,6 +19,12 @@ it?"
  Answer:
 
 1- During the development phase, we are creating an IPA file to test the application. This file contains the application's compiled code, resources, and manifest files. We can use this file to test the application on iOS devices or simulators before submitting it to the App Store.
+
+
 2- After testing, we create a final IPA file for distribution. This file is uploaded to the App Store via App Store Connect. The App Store uses this file to create the binary that will be distributed to users.
+
+
 3- Once the IPA file is uploaded, it enters the App Store's review process. Apple's team reviews the app for compliance with their guidelines. Any issues found during this process will be communicated back to the developer.
+
+
 4- After a successful review, the app is published on the App Store. Users can then download and install the IPA file from the App Store onto their devices.
